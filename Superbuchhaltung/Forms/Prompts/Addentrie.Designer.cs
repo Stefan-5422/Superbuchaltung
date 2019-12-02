@@ -99,6 +99,7 @@
             this.Controls.Add(this.Kontonamebox);
             this.Name = "Addentrie";
             this.Text = "Addentrie";
+            this.Load += new System.EventHandler(this.Addentrie_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

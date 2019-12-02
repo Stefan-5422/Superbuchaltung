@@ -41,15 +41,9 @@ namespace Superbuchhaltung
                 if (MessageBox.Show("Der Kontoname Existiert bereits!\nWollen sie eine zweite Instanz erstellen?", "Konto existiert bereits", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.No) goto goback;
             }
             File.AppendAllLines(@"C:\Users\Public\TestFolder\" + Kontonummerbox.Text.Substring(0,1) + @".txt", write);
-            goback:
-            FormCollection fc = Application.OpenForms;
-            foreach(Form frm in fc)
-            {
-                if(frm.Name == "Ohno Buchaltung")
-                {
-                    frm.Refresh();
-                }
-            }
+        goback:
+            Main m = new Main();
+            m.Reloadview();
             return;
         }
 
@@ -61,6 +55,11 @@ namespace Superbuchhaltung
         private void CancelBtn_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void Addentrie_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

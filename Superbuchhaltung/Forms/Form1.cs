@@ -21,18 +21,19 @@ namespace Superbuchhaltung
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            P0.Visible = false;
-            Refresh();
+            //PH.Visible = false;
+            Reloadview();
 
         }
         private void Changeview()
         {
-            P0.Visible = false;
+            PH.Visible = false;
         }
 
         private void Homebtn_Click(object sender, EventArgs e)
         {
             Changeview();
+            PH.Visible = true;
             Selection = 0;
         }
 
@@ -44,7 +45,6 @@ namespace Superbuchhaltung
         private void Kat0btn_Click(object sender, EventArgs e)
         {
             Changeview();
-            P0.Visible = true;
             Selection = 1;
         }
         private void ToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -64,18 +64,21 @@ namespace Superbuchhaltung
 
         private void RefreshToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Refresh();
+            Reloadview();
         }
-        public void Refresh()
+        public void Reloadview()
         {
-            P0dataview.Rows.Clear();
-            for (int i = 0; i < 10; i++)
+            if (Selection == 0)
             {
-                string[] file = File.ReadAllLines(@"C:\Users\Public\TestFolder\" + i + ".txt");
-                foreach (string f in file)
+                PHdataview.Rows.Clear();
+                for (int i = 0; i < 10; i++)
                 {
-                    P0dataview.Rows.Add(f.Split(';'));
+                    string[] file = File.ReadAllLines(@"C:\Users\Public\TestFolder\" + i + ".txt");
+                    foreach (string f in file)
+                    {
+                        PHdataview.Rows.Add(f.Split(';'));
 
+                    }
                 }
             }
         }
