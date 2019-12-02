@@ -1,0 +1,15 @@
+4000;Handelswarenerloese 20% (Fertigerzeugniserloese oder andere Erloese oder Ertraege aus der Hauptleistungdes (Unternehmens)
+4001;Handelswarenerloese 10%
+4002;Handelswarenerloese 13%
+4100;Fertigerzeugniserloese
+4400;Erloesberichtigungen
+4410;Kundenskonti
+4500;Bestandsveraenderungen
+4810;Mietertraege (Pachtertraege)*
+4820;Provisionsertraege*
+4880;uebrige betriebliche Ertraege
+4890;Mahnspesenverguetungen
+4900;Eigenverbrauch 20%
+4901;Eigenverbrauch 10%
+4902;Eigenverbrauch 13%
+4903;Eigenverbrauch 0%

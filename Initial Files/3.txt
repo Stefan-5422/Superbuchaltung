@@ -1,0 +1,12 @@
+3120;Bank (Bankschuld, Verbindlichkeiten gegenueber Kreditinstituten)
+3150;Darlehen(von einer Bank)
+3180;Verbindlichkeiten Kreditkartenunternehmen
+3190;Verbindlichkeiten Bankomatkarten
+3300;Lieferverbindlichkeiten (Verbindlichkeiten aus Lieferungen und Leistungen Inland, Lieferantensammelkonto)
+3500;Umsatzsteuer
+3520;USt-Zahllast
+3540;Verbindlichkeiten Finanzamt (Verrechnungskonto Finanzamt)
+3600;Verbindlichkeiten Krankenkasse
+3610;Verbindlichkeiten Gemeinde (Stadtkasse)
+3800;Sonstige Verbindlichkeiten
+3850;Verbindlichkeiten gegen Mitarbeiter aus der Bezugsverrechnung

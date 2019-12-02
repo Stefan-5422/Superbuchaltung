@@ -1,0 +1,13 @@
+1000;Bezugsverrechnung
+1100;Rohstoffvorrat
+1250;Vorrat Ersatzteile
+1300;Hilfsstoffvorrat
+1340;Vorrat Verpackungsmaterial
+1350;Vorrat Betriebsstoffe
+1360;Vorrat Heizoel
+1365;Vorrat Schmiermittel
+1370;Vorrat Reinigungsmaterial
+1390;Vorrat Bueromaterial
+1400;Unfertige Erzeugnisse
+1500;Fertige Erzeugnisse
+1600;Handelswarenvorrat

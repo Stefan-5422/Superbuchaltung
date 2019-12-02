@@ -1,0 +1,12 @@
+8050;Zinsenertraege aus Bankguthaben
+8051;Zinsenertraege aus gewaehrten Darlehen
+8055;Verzugszinsenertraege
+8056;Sonstige Zinsenertraege 20%
+8057;Sonstige Zinsenertraege 10%
+8310;Zinsenaufwand fuer Bankkredite
+8311;Sonstiger Aufwand fuer Bankkredite (z.B. Bereitstellungsprovision, ueberziehungsprovision)
+8315;Zinsenaufwand fuer Darlehen
+8320;Verzugszinsenaufwand
+8321;Mahnspesen
+8325;Zinsenaufwand fuer Lieferantenkredite 20%
+8326;Zinsenaufwand fuer Lieferantenkredite 10%

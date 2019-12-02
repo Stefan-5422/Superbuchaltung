@@ -1,0 +1,6 @@
+9000;Kapital
+9600;Private
+9610;Privatsteuern
+9800;Eroeffnungsbilanzkonto (EBK)
+9850;Schlussbilanzkonto (SBK)
+9890;Gewinn- und Verlustkonto (GuV)

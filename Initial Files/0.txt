@@ -1,0 +1,12 @@
+0120;Datenverarbeitungsprogramme
+0180;Geleistete Anzahlungen fuer immaterielle Vermoegensgegenstaende
+0200;Unbebaute Grundstuecke
+0210;Bebaute Grundstuecke (Grundwert)
+0300;Gebaeude
+0400;Maschinen
+0500;Werkzeuge
+0600;Betriebs- und Geschaeftsausstattung
+0620;Bueromaschinen, EDV-Anlagen
+0630;Pkw und Kombis
+0640;LKW
+0800;Beteiligung

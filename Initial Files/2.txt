@@ -1,0 +1,12 @@
+2000;Lieferforderungen(Forderungen aus Lieferungen und Leistungen Inland, Kundensammelkonto)
+2300;Sonstige Forderungen
+2320;Gegebene Darlehen
+2380;Guthaben bei Lieferanten(nicht aus Anzahlungen)
+2400;Lohn- und Gehaltsvorschuesse
+2500;Vorsteuer
+2700;Kassa
+2800;Bank (Guthaben bei Kreditinstituten)
+2810;PSK
+2870;Barverkehr mit Banken
+2880;Forderungen Kreditkartenunternehmen
+2885;Forderungen Bankomatkarten

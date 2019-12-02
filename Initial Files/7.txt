@@ -1,0 +1,45 @@
+7100;Grundsteuer
+7150;Tourismusabgabe (Interessentenbeitrag)
+7180;Gebuehren
+7190;Sonstige Abgaben
+7200;Instandhaltung durch Dritte
+7210;Reinigung durch Dritte
+7220;Entsorgungsaufwand
+7240;Heizoelverbrauch
+7250;Treibstoffverbrauch
+7260;Gasverbrauch
+7270;Stromverbrauch
+7280;Heizmaterialverbrauch (feste Brennstoffe)
+7300;Ausgangsfrachten (Transporte durch Dritte)
+7310;Paketgebuehren 20%
+7311;Paketgebuehren 0%
+7320;Pkw- und Kombi-Betriebsaufwand
+7321;Motorbezogene Versicherungssteuer Pkw und Kombis
+7325;Versicherungsaufwand Pkw und Kombis
+7326;Parkgebuehren, Strassenmaut Pkw und Kombis
+7330;Lkw-Betriebsaufwand
+7331;Motorbezogene Versicherungssteuer Lkw
+7332;Kraftfahrzeugsteuer Lkw
+7335;Versicherungsaufwand Lkw
+7336;Parkgebuehren, Strassenmaut Lkw
+7380;Telefongebuehren (Telefaxgebuehren)
+7381;Internetgebuehren
+7385;Portogebuehren
+7400;Mietaufwand (Pachtaufwand)
+7540;Provisionen an Dritte (Nicht-Arbeitnehmer)
+7600;Bueromaterial (Bueroaufwand, Buerobedarf)
+7610;Kopien und sonstige Druckkosten
+7630;Fachliteratur und Zeitungen
+7650;Werbeaufwand
+7680;Spenden und Trinkgelder
+7700;Versicherungsaufwand
+7740;Versicherungsbeitraege an die Sozialversicherungsanstalt der gewerblichen Wirtschaft
+7750;Rechts- und Beratungsaufwand
+7780;Kammerumlage
+7790;Spesen des Geldverkehrs
+7791;Sonstige Bankspesen
+7792;Provisionen, Gebuehren Kredit- und Bankomatkarten
+7811;Konventionalstrafen
+7819;Sonstige Schadensfaelle
+7850;uebrige betriebliche Aufwendungen
+7890;Lieferantenskonti auf sonstige betriebliche Aufwendungen

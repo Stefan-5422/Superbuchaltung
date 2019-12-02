@@ -1,0 +1,16 @@
+6000;Fertigungsloehne
+6010;Hilfsloehne
+6100;Lehrlingsentschaedigungen Arbeiter
+6200;Gehaelter
+6300;Lehrlingsentschaedigungen Angestellte
+6500;Gesetzlicher Sozialaufwand Arbeiter
+6560;Gesetzlicher Sozialaufwand Angestellte
+6600;Dienstgeberbeitrag Arbeiter
+6610;Zuschlag zum DB Arbeiter
+6620;Kommunalsteuer Arbeiter
+6630;Wiener Dienstgeberabgabe Arbeiter
+6660;Dienstgeberbeitrag Angestellte
+6670;Zuschlag zum DB Angestellte
+6680;Kommunalsteuer Angestellte
+6690;Wiener Dienstgeberabgabe Angestellte
+6700;Freiwilliger Sozialaufwand
