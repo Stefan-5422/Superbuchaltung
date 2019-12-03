@@ -35,33 +35,36 @@
             this.Homebtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.P0 = new System.Windows.Forms.Panel();
-            this.P0dataview = new System.Windows.Forms.DataGridView();
+            this.PH = new System.Windows.Forms.Panel();
+            this.PHdataview = new System.Windows.Forms.DataGridView();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.Databtn = new System.Windows.Forms.ToolStripDropDownButton();
+            this.modifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Addentriemenuueitem = new System.Windows.Forms.ToolStripMenuItem();
+            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.BNummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BWert = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.Databtn = new System.Windows.Forms.ToolStripDropDownButton();
-            this.Addentriemenuueitem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.P0.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.P0dataview)).BeginInit();
+            this.PH.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PHdataview)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.Green;
             this.panel1.Controls.Add(this.Kat0btn);
             this.panel1.Controls.Add(this.Homebtn);
             this.panel1.Location = new System.Drawing.Point(1, 27);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(197, 531);
+            this.panel1.Size = new System.Drawing.Size(197, 532);
             this.panel1.TabIndex = 0;
             // 
             // Kat0btn
@@ -119,53 +122,35 @@
             this.button1.Text = "Ohno Buchhaltung";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // P0
+            // PH
             // 
-            this.P0.Controls.Add(this.P0dataview);
-            this.P0.Location = new System.Drawing.Point(200, 0);
-            this.P0.Name = "P0";
-            this.P0.Size = new System.Drawing.Size(919, 556);
-            this.P0.TabIndex = 2;
+            this.PH.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PH.Controls.Add(this.PHdataview);
+            this.PH.Location = new System.Drawing.Point(200, 0);
+            this.PH.Name = "PH";
+            this.PH.Size = new System.Drawing.Size(919, 556);
+            this.PH.TabIndex = 2;
             // 
-            // P0dataview
+            // PHdataview
             // 
-            this.P0dataview.AllowUserToAddRows = false;
-            this.P0dataview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.P0dataview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PHdataview.AllowUserToAddRows = false;
+            this.PHdataview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PHdataview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PHdataview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.BNummer,
             this.BName,
             this.BWert});
-            this.P0dataview.Location = new System.Drawing.Point(0, 28);
-            this.P0dataview.Name = "P0dataview";
-            this.P0dataview.RowHeadersWidth = 10;
-            this.P0dataview.RowTemplate.Height = 24;
-            this.P0dataview.Size = new System.Drawing.Size(916, 531);
-            this.P0dataview.TabIndex = 0;
-            this.P0dataview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
-            // 
-            // BNummer
-            // 
-            this.BNummer.HeaderText = "Kontennummer";
-            this.BNummer.MinimumWidth = 6;
-            this.BNummer.Name = "BNummer";
-            this.BNummer.ReadOnly = true;
-            this.BNummer.Width = 125;
-            // 
-            // BName
-            // 
-            this.BName.HeaderText = "Kontenname";
-            this.BName.MinimumWidth = 6;
-            this.BName.Name = "BName";
-            this.BName.ReadOnly = true;
-            this.BName.Width = 125;
-            // 
-            // BWert
-            // 
-            this.BWert.HeaderText = "Kontensumme";
-            this.BWert.MinimumWidth = 6;
-            this.BWert.Name = "BWert";
-            this.BWert.ReadOnly = true;
-            this.BWert.Width = 125;
+            this.PHdataview.Location = new System.Drawing.Point(0, 28);
+            this.PHdataview.Name = "PHdataview";
+            this.PHdataview.RowHeadersWidth = 10;
+            this.PHdataview.RowTemplate.Height = 24;
+            this.PHdataview.Size = new System.Drawing.Size(916, 531);
+            this.PHdataview.TabIndex = 0;
+            this.PHdataview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // toolStrip1
             // 
@@ -192,12 +177,26 @@
             this.Databtn.Size = new System.Drawing.Size(55, 24);
             this.Databtn.Text = "Data";
             // 
+            // modifyToolStripMenuItem
+            // 
+            this.modifyToolStripMenuItem.Name = "modifyToolStripMenuItem";
+            this.modifyToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.modifyToolStripMenuItem.Text = "Modify";
+            this.modifyToolStripMenuItem.Click += new System.EventHandler(this.ModifyToolStripMenuItem_Click);
+            // 
             // Addentriemenuueitem
             // 
             this.Addentriemenuueitem.Name = "Addentriemenuueitem";
-            this.Addentriemenuueitem.Size = new System.Drawing.Size(224, 26);
+            this.Addentriemenuueitem.Size = new System.Drawing.Size(158, 26);
             this.Addentriemenuueitem.Text = "Addentrie";
             this.Addentriemenuueitem.Click += new System.EventHandler(this.ToolStripMenuItem1_Click);
+            // 
+            // refreshToolStripMenuItem
+            // 
+            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.refreshToolStripMenuItem.Text = "Refresh";
+            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.RefreshToolStripMenuItem_Click);
             // 
             // timer1
             // 
@@ -205,28 +204,38 @@
             this.timer1.Interval = 10000;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // refreshToolStripMenuItem
+            // BNummer
             // 
-            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.refreshToolStripMenuItem.Text = "Refresh";
-            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.RefreshToolStripMenuItem_Click);
+            this.BNummer.HeaderText = "Kontennummer";
+            this.BNummer.MinimumWidth = 6;
+            this.BNummer.Name = "BNummer";
+            this.BNummer.ReadOnly = true;
+            this.BNummer.Width = 125;
             // 
-            // modifyToolStripMenuItem
+            // BName
             // 
-            this.modifyToolStripMenuItem.Name = "modifyToolStripMenuItem";
-            this.modifyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.modifyToolStripMenuItem.Text = "Modify";
-            this.modifyToolStripMenuItem.Click += new System.EventHandler(this.ModifyToolStripMenuItem_Click);
+            this.BName.HeaderText = "Kontenname";
+            this.BName.MinimumWidth = 6;
+            this.BName.Name = "BName";
+            this.BName.ReadOnly = true;
+            this.BName.Width = 512;
+            // 
+            // BWert
+            // 
+            this.BWert.HeaderText = "Kontensumme";
+            this.BWert.MinimumWidth = 6;
+            this.BWert.Name = "BWert";
+            this.BWert.ReadOnly = true;
+            this.BWert.Width = 125;
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1120, 562);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.P0);
+            this.Controls.Add(this.PH);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Location = new System.Drawing.Point(200, 0);
@@ -236,8 +245,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.P0.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.P0dataview)).EndInit();
+            this.PH.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PHdataview)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -252,17 +261,17 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Kat0btn;
         private System.Windows.Forms.Button Homebtn;
-        private System.Windows.Forms.Panel P0;
-        private System.Windows.Forms.DataGridView P0dataview;
+        private System.Windows.Forms.Panel PH;
+        private System.Windows.Forms.DataGridView PHdataview;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripDropDownButton Databtn;
         private System.Windows.Forms.ToolStripMenuItem Addentriemenuueitem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BNummer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BWert;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifyToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BNummer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BWert;
     }
 }
 
