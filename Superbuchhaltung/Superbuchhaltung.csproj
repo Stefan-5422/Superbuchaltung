@@ -64,6 +64,12 @@
     <Compile Include="Forms\Prompts\Modify.Designer.cs">
       <DependentUpon>Modify.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Prompts\Query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Prompts\Query.Designer.cs">
+      <DependentUpon>Query.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Form1.resx">
@@ -71,6 +77,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Prompts\Addentrie.resx">
       <DependentUpon>Addentrie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Prompts\Modify.resx">
+      <DependentUpon>Modify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Prompts\Query.resx">
+      <DependentUpon>Query.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

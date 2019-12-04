@@ -20,3 +20,15 @@ C:\Users\stefa\Documents\Gitgh\Superbuchhaltung\Superbuchhaltung\obj\Debug\Super
 C:\Users\stefa\Documents\Gitgh\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.csproj.CoreCompileInputs.cache
 C:\Users\stefa\Documents\Gitgh\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.exe
 C:\Users\stefa\Documents\Gitgh\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.pdb
+C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\bin\Debug\Superbuchhaltung.exe.config
+C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\bin\Debug\Superbuchhaltung.exe
+C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\bin\Debug\Superbuchhaltung.pdb
+C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.csprojAssemblyReference.cache
+C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.Main.resources
+C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.Addentrie.resources
+C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.Properties.Resources.resources
+C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.csproj.GenerateResource.cache
+C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.csproj.CoreCompileInputs.cache
+C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.exe
+C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.pdb
+C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.Forms.Prompts.Query.resources

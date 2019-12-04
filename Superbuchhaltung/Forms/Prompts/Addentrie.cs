@@ -20,12 +20,12 @@ namespace Superbuchhaltung
 
         private void Bestätigungsbutton_Click(object sender, EventArgs e)
         {
-            string[] write = { Kontonummerbox.Text + ";" +Kontonamebox.Text};
+            string[] write = { Kontonummerbox.Text + ";" +Kontonamebox.Text + '\n'};
             if (!Directory.Exists(@"C:\Users\Public\TestFolder\")) {
                 Directory.CreateDirectory(@"C:\Users\Public\TestFolder");
             }
             string fi = File.ReadAllText(@"C:\Users\Public\TestFolder\" + Kontonummerbox.Text.Substring(0, 1) + @".txt");
-            if (fi.IndexOf(Kontonummerbox.Text) != 0) {
+            if (fi.Contains(Kontonummerbox.Text)) {
 
                 if (MessageBox.Show("Der Kontonummer Existiert bereits!\nWollen sie diese überschreiben?", "Konto existiert bereits",MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.No) goto goback;
                 int index = fi.IndexOf(Kontonummerbox.Text);
@@ -58,6 +58,11 @@ namespace Superbuchhaltung
         }
 
         private void Addentrie_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Kontolabel2_Click(object sender, EventArgs e)
         {
 
         }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Kat0btn = new System.Windows.Forms.Button();
@@ -37,20 +36,33 @@
             this.button1 = new System.Windows.Forms.Button();
             this.PH = new System.Windows.Forms.Panel();
             this.PHdataview = new System.Windows.Forms.DataGridView();
+            this.BNummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BWert = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pdataview = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.addentrieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.queryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Databtn = new System.Windows.Forms.ToolStripDropDownButton();
             this.modifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Addentriemenuueitem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.BNummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BWert = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.P = new System.Windows.Forms.Panel();
+            this.Pdatagridview = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.PH.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PHdataview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pdataview)).BeginInit();
             this.toolStrip1.SuspendLayout();
+            this.P.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Pdatagridview)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -144,7 +156,7 @@
             this.BNummer,
             this.BName,
             this.BWert});
-            this.PHdataview.Location = new System.Drawing.Point(0, 28);
+            this.PHdataview.Location = new System.Drawing.Point(3, 25);
             this.PHdataview.Name = "PHdataview";
             this.PHdataview.RowHeadersWidth = 10;
             this.PHdataview.RowTemplate.Height = 24;
@@ -152,17 +164,91 @@
             this.PHdataview.TabIndex = 0;
             this.PHdataview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
+            // BNummer
+            // 
+            this.BNummer.HeaderText = "Kontennummer";
+            this.BNummer.MinimumWidth = 6;
+            this.BNummer.Name = "BNummer";
+            this.BNummer.ReadOnly = true;
+            this.BNummer.Width = 125;
+            // 
+            // BName
+            // 
+            this.BName.HeaderText = "Kontenname";
+            this.BName.MinimumWidth = 6;
+            this.BName.Name = "BName";
+            this.BName.ReadOnly = true;
+            this.BName.Width = 512;
+            // 
+            // BWert
+            // 
+            this.BWert.HeaderText = "Kontensumme";
+            this.BWert.MinimumWidth = 6;
+            this.BWert.Name = "BWert";
+            this.BWert.ReadOnly = true;
+            this.BWert.Width = 125;
+            // 
+            // Pdataview
+            // 
+            this.Pdataview.ColumnHeadersHeight = 29;
+            this.Pdataview.Location = new System.Drawing.Point(0, 0);
+            this.Pdataview.Name = "Pdataview";
+            this.Pdataview.RowHeadersWidth = 51;
+            this.Pdataview.Size = new System.Drawing.Size(240, 150);
+            this.Pdataview.TabIndex = 0;
+            // 
             // toolStrip1
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Databtn});
+            this.toolStripDropDownButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.toolStrip1.Size = new System.Drawing.Size(1120, 27);
-            this.toolStrip1.TabIndex = 3;
-            this.toolStrip1.Text = "toolStrip1";
-            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ToolStrip1_ItemClicked);
+            this.toolStrip1.TabIndex = 0;
+            // 
+            // toolStripDropDownButton1
+            // 
+            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addentrieToolStripMenuItem,
+            this.reloadToolStripMenuItem,
+            this.modifyToolStripMenuItem1,
+            this.queryToolStripMenuItem});
+            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
+            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(55, 24);
+            this.toolStripDropDownButton1.Text = "Data";
+            // 
+            // addentrieToolStripMenuItem
+            // 
+            this.addentrieToolStripMenuItem.Name = "addentrieToolStripMenuItem";
+            this.addentrieToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addentrieToolStripMenuItem.Text = "Addentrie";
+            this.addentrieToolStripMenuItem.Click += new System.EventHandler(this.AddentrieToolStripMenuItem_Click);
+            // 
+            // reloadToolStripMenuItem
+            // 
+            this.reloadToolStripMenuItem.Name = "reloadToolStripMenuItem";
+            this.reloadToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.reloadToolStripMenuItem.Text = "Reload";
+            this.reloadToolStripMenuItem.Click += new System.EventHandler(this.ReloadToolStripMenuItem_Click);
+            // 
+            // modifyToolStripMenuItem1
+            // 
+            this.modifyToolStripMenuItem1.Name = "modifyToolStripMenuItem1";
+            this.modifyToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.modifyToolStripMenuItem1.Text = "Modify";
+            this.modifyToolStripMenuItem1.Click += new System.EventHandler(this.ModifyToolStripMenuItem1_Click);
+            // 
+            // queryToolStripMenuItem
+            // 
+            this.queryToolStripMenuItem.Name = "queryToolStripMenuItem";
+            this.queryToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.queryToolStripMenuItem.Text = "Query";
+            this.queryToolStripMenuItem.Click += new System.EventHandler(this.QueryToolStripMenuItem_Click);
             // 
             // Databtn
             // 
@@ -198,35 +284,58 @@
             this.refreshToolStripMenuItem.Text = "Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.RefreshToolStripMenuItem_Click);
             // 
-            // timer1
+            // P
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 10000;
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            this.P.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.P.Controls.Add(this.Pdatagridview);
+            this.P.Location = new System.Drawing.Point(200, 0);
+            this.P.Name = "P";
+            this.P.Size = new System.Drawing.Size(919, 556);
+            this.P.TabIndex = 3;
             // 
-            // BNummer
+            // Pdatagridview
             // 
-            this.BNummer.HeaderText = "Kontennummer";
-            this.BNummer.MinimumWidth = 6;
-            this.BNummer.Name = "BNummer";
-            this.BNummer.ReadOnly = true;
-            this.BNummer.Width = 125;
+            this.Pdatagridview.AllowUserToAddRows = false;
+            this.Pdatagridview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pdatagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Pdatagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.Pdatagridview.Location = new System.Drawing.Point(3, 25);
+            this.Pdatagridview.Name = "Pdatagridview";
+            this.Pdatagridview.RowHeadersWidth = 10;
+            this.Pdatagridview.RowTemplate.Height = 24;
+            this.Pdatagridview.Size = new System.Drawing.Size(916, 531);
+            this.Pdatagridview.TabIndex = 0;
             // 
-            // BName
+            // dataGridViewTextBoxColumn1
             // 
-            this.BName.HeaderText = "Kontenname";
-            this.BName.MinimumWidth = 6;
-            this.BName.Name = "BName";
-            this.BName.ReadOnly = true;
-            this.BName.Width = 512;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Kontennummer";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
-            // BWert
+            // dataGridViewTextBoxColumn2
             // 
-            this.BWert.HeaderText = "Kontensumme";
-            this.BWert.MinimumWidth = 6;
-            this.BWert.Name = "BWert";
-            this.BWert.ReadOnly = true;
-            this.BWert.Width = 125;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Kontenname";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 512;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Kontensumme";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // Main
             // 
@@ -247,8 +356,11 @@
             this.panel2.ResumeLayout(false);
             this.PH.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PHdataview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pdataview)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.P.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Pdatagridview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,15 +375,25 @@
         private System.Windows.Forms.Button Homebtn;
         private System.Windows.Forms.Panel PH;
         private System.Windows.Forms.DataGridView PHdataview;
+        private System.Windows.Forms.DataGridView Pdataview;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripDropDownButton Databtn;
         private System.Windows.Forms.ToolStripMenuItem Addentriemenuueitem;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifyToolStripMenuItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn BNummer;
         private System.Windows.Forms.DataGridViewTextBoxColumn BName;
         private System.Windows.Forms.DataGridViewTextBoxColumn BWert;
+        private System.Windows.Forms.Panel P;
+        private System.Windows.Forms.DataGridView Pdatagridview;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
+        private System.Windows.Forms.ToolStripMenuItem addentrieToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reloadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modifyToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem queryToolStripMenuItem;
     }
 }
 

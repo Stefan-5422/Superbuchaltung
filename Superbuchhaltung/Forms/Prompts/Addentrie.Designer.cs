@@ -85,6 +85,7 @@
             this.Kontolabel2.Size = new System.Drawing.Size(100, 23);
             this.Kontolabel2.TabIndex = 5;
             this.Kontolabel2.Text = "Kontoname";
+            this.Kontolabel2.Click += new System.EventHandler(this.Kontolabel2_Click);
             // 
             // Addentrie
             // 

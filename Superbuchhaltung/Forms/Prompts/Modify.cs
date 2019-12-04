@@ -16,5 +16,10 @@ namespace Superbuchhaltung.Forms.Prompts
         {
             InitializeComponent();
         }
+
+        private void Modify_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
