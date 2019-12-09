@@ -41,7 +41,7 @@ namespace Superbuchhaltung
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            Console.WriteLine(PHdataview.Rows[PHdataview.CurrentCell.RowIndex].Cells.ToString());
         }
 
         private void Kat0btn_Click(object sender, EventArgs e)
