@@ -129,8 +129,10 @@ namespace Superbuchhaltung
 
         private void ModifyToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Forms.Prompts.Modify M = new Forms.Prompts.Modify();
-            M.Show();
+            //Forms.Prompts.Modify M = new Forms.Prompts.Modify();
+            //M.Show();
+            PHdataview.Rows.Clear();
+            PHdataview.Rows.Add("ERROR", "Modify not Implimented yet!");
         }
     }
 }
