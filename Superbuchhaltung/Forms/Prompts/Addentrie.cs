@@ -20,6 +20,7 @@ namespace Superbuchhaltung
 
         private void Bestätigungsbutton_Click(object sender, EventArgs e)
         {
+            if (Kontonummerbox.Text.Length == 0 || Kontonamebox.Text.Length == 0) goto goback;
             string[] write = { Kontonummerbox.Text + ";" +Kontonamebox.Text + '\n'};
             if (!Directory.Exists(@"C:\Users\Public\TestFolder\")) {
                 Directory.CreateDirectory(@"C:\Users\Public\TestFolder");
