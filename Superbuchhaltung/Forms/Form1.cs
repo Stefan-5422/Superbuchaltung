@@ -71,9 +71,17 @@ namespace Superbuchhaltung
         {
             if (Selection == 0)
             {
+                if (!Directory.Exists(@"C:\Users\Public\TestFolder\"))
+                {
+                    Directory.CreateDirectory(@"C:\Users\Public\TestFolder\");
+                }
                 PHdataview.Rows.Clear();
                 for (int i = 0; i < 10; i++)
                 {
+                    if(!File.Exists(@"C:\Users\Public\TestFolder\" + i + ".txt"))
+                    {
+                        File.Create(@"C:\Users\Public\TestFolder\" + i + ".txt");
+                    }
                     string[] file = File.ReadAllLines(@"C:\Users\Public\TestFolder\" + i + ".txt");
                     foreach (string f in file)
                     {

@@ -35,7 +35,7 @@ namespace Superbuchhaltung.Forms.Prompts
                     string[] file = File.ReadAllLines(@"C:\Users\Public\TestFolder\" + i + ".txt");
                     foreach (string s in file)
                     {
-                        if (s.Contains(Suchen.Text))
+                        if (s.ToLower().Contains(Suchen.Text.ToLower()))
                         {
                             result.Add(s);
                             KUHL.Rows.Add(s.Split(';'));
