@@ -115,10 +115,9 @@ namespace Superbuchhaltung
         }
         public void Search(List<string> result)
         {
-            Main m = new Main();
             Changeview();
             PH.Visible = true;
-            m.PHdataview.Rows.Clear();
+            PHdataview.Rows.Clear();
             Console.WriteLine(result.Count);
             for (int i = 0; i < result.Count; i++)
             {
