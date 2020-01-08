@@ -46,42 +46,51 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Buchungen\AddBuchung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Buchungen\AddBuchung.Designer.cs">
+      <DependentUpon>AddBuchung.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Prompts\Addentrie.cs">
+    <Compile Include="Forms\Konten\Prompts\Addentrie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Prompts\Addentrie.Designer.cs">
+    <Compile Include="Forms\Konten\Prompts\Addentrie.Designer.cs">
       <DependentUpon>Addentrie.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Prompts\Modify.cs">
+    <Compile Include="Forms\Konten\Prompts\Modify.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Prompts\Modify.Designer.cs">
+    <Compile Include="Forms\Konten\Prompts\Modify.Designer.cs">
       <DependentUpon>Modify.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Prompts\Query.cs">
+    <Compile Include="Forms\Konten\Prompts\Query.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Prompts\Query.Designer.cs">
+    <Compile Include="Forms\Konten\Prompts\Query.Designer.cs">
       <DependentUpon>Query.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Buchungen\AddBuchung.resx">
+      <DependentUpon>AddBuchung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Prompts\Addentrie.resx">
+    <EmbeddedResource Include="Forms\Konten\Prompts\Addentrie.resx">
       <DependentUpon>Addentrie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Prompts\Modify.resx">
+    <EmbeddedResource Include="Forms\Konten\Prompts\Modify.resx">
       <DependentUpon>Modify.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Prompts\Query.resx">
+    <EmbeddedResource Include="Forms\Konten\Prompts\Query.resx">
       <DependentUpon>Query.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -109,5 +118,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

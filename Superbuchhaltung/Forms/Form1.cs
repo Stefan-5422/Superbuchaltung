@@ -71,9 +71,9 @@ namespace Superbuchhaltung
         {
             if (Selection == 0)
             {
-                if (!Directory.Exists(@"C:\Users\Public\TestFolder\"))
+                if (!Directory.Exists(@"C:\Users\Public\TestFolder"))
                 {
-                    Directory.CreateDirectory(@"C:\Users\Public\TestFolder\");
+                    Directory.CreateDirectory(@"C:\Users\Public\TestFolder");
                 }
                 PHdataview.Rows.Clear();
                 for (int i = 0; i < 10; i++)
@@ -140,6 +140,12 @@ namespace Superbuchhaltung
             //M.Show();
             PHdataview.Rows.Clear();
             PHdataview.Rows.Add("ERROR", "Modify not Implimented yet!");
+        }
+
+        private void NeueBuchungToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PHdataview.Rows.Clear();
+            PHdataview.Rows.Add("ERROR", "Neue Buchung not Implimented yet!");
         }
     }
 }

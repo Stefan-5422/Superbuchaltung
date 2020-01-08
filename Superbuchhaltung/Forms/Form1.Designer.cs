@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Kat0btn = new System.Windows.Forms.Button();
+            this.Guvbtn = new System.Windows.Forms.Button();
             this.Homebtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -55,6 +55,8 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.neueBuchungToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.PH.SuspendLayout();
@@ -71,7 +73,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.Green;
-            this.panel1.Controls.Add(this.Kat0btn);
+            this.panel1.Controls.Add(this.Guvbtn);
             this.panel1.Controls.Add(this.Homebtn);
             this.panel1.Location = new System.Drawing.Point(1, 27);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -79,19 +81,19 @@
             this.panel1.Size = new System.Drawing.Size(197, 532);
             this.panel1.TabIndex = 0;
             // 
-            // Kat0btn
+            // Guvbtn
             // 
-            this.Kat0btn.FlatAppearance.BorderSize = 0;
-            this.Kat0btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Kat0btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Kat0btn.ForeColor = System.Drawing.Color.White;
-            this.Kat0btn.Location = new System.Drawing.Point(0, 147);
-            this.Kat0btn.Name = "Kat0btn";
-            this.Kat0btn.Size = new System.Drawing.Size(194, 54);
-            this.Kat0btn.TabIndex = 3;
-            this.Kat0btn.Text = "0. Kategorie";
-            this.Kat0btn.UseVisualStyleBackColor = true;
-            this.Kat0btn.Click += new System.EventHandler(this.Kat0btn_Click);
+            this.Guvbtn.FlatAppearance.BorderSize = 0;
+            this.Guvbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Guvbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Guvbtn.ForeColor = System.Drawing.Color.White;
+            this.Guvbtn.Location = new System.Drawing.Point(0, 147);
+            this.Guvbtn.Name = "Guvbtn";
+            this.Guvbtn.Size = new System.Drawing.Size(194, 54);
+            this.Guvbtn.TabIndex = 3;
+            this.Guvbtn.Text = "GuV";
+            this.Guvbtn.UseVisualStyleBackColor = true;
+            this.Guvbtn.Click += new System.EventHandler(this.Kat0btn_Click);
             // 
             // Homebtn
             // 
@@ -201,7 +203,8 @@
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripDropDownButton1});
+            this.toolStripDropDownButton1,
+            this.toolStripDropDownButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
@@ -219,8 +222,8 @@
             this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(55, 24);
-            this.toolStripDropDownButton1.Text = "Data";
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(124, 24);
+            this.toolStripDropDownButton1.Text = "Konto-Einträge";
             // 
             // addentrieToolStripMenuItem
             // 
@@ -337,6 +340,24 @@
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Width = 125;
             // 
+            // toolStripDropDownButton2
+            // 
+            this.toolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.neueBuchungToolStripMenuItem});
+            this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
+            this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
+            this.toolStripDropDownButton2.Size = new System.Drawing.Size(96, 24);
+            this.toolStripDropDownButton2.Text = "Buchungen";
+            // 
+            // neueBuchungToolStripMenuItem
+            // 
+            this.neueBuchungToolStripMenuItem.Name = "neueBuchungToolStripMenuItem";
+            this.neueBuchungToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.neueBuchungToolStripMenuItem.Text = "Neue Buchung";
+            this.neueBuchungToolStripMenuItem.Click += new System.EventHandler(this.NeueBuchungToolStripMenuItem_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -371,7 +392,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Kat0btn;
+        private System.Windows.Forms.Button Guvbtn;
         private System.Windows.Forms.Button Homebtn;
         private System.Windows.Forms.Panel PH;
         private System.Windows.Forms.DataGridView PHdataview;
@@ -394,6 +415,8 @@
         private System.Windows.Forms.ToolStripMenuItem reloadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifyToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem queryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
+        private System.Windows.Forms.ToolStripMenuItem neueBuchungToolStripMenuItem;
     }
 }
 

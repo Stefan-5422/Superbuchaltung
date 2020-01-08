@@ -46,7 +46,7 @@ namespace Superbuchhaltung.Forms.Prompts
                 if (result.Count != 0)
                 {
                     Main m = new Main();
-                    //m.Search(result);
+                    m.Search(result);
                 }
             }
             else

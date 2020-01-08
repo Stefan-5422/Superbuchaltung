@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Superbuchhaltung.Forms.Prompts
+namespace Superbuchhaltung.Forms.Buchungen
 {
-    public partial class Modify : Form
+    public partial class AddBuchung : Form
     {
-        public Modify()
+        public AddBuchung()
         {
             InitializeComponent();
-        }
-
-        private void Modify_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

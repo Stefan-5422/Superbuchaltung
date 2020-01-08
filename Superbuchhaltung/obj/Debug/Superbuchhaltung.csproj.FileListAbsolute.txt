@@ -33,3 +33,4 @@ C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\
 C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.pdb
 C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.Forms.Prompts.Query.resources
 C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.Forms.Prompts.Modify.resources
+C:\Users\Stefan Kössner\Documents\GitHub\Superbuchhaltung\Superbuchhaltung\obj\Debug\Superbuchhaltung.Forms.Buchungen.AddBuchung.resources
