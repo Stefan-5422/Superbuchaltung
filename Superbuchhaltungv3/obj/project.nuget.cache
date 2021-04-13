@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "juenvdR1PPQm1czmRkQHH+muJfBEAcXgn1rqR5zOERlEMqYm3vckKGSF9LwvSUM+KXOykZdrD9VhS9+MVfDUBA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\stefa\\source\\repos\\Superbuchhaltungv3\\Superbuchhaltungv3\\Superbuchhaltungv3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\stefa\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
+    "C:\\Users\\stefa\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
